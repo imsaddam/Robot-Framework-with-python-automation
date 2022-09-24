@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20220924 20:16:55.778" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Im Saddam\.vscode\extensions\robocorp.robotframework-lsp-1.1.3\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser">
+<arg>Chrome</arg>
+<msg timestamp="20220924 20:16:57.586" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220924 20:16:57.586" endtime="20220924 20:16:57.586"/>
+</kw>
+<kw name="Click Link">
+<arg>xpath=//a[@class='ico-login']</arg>
+<status status="NOT RUN" starttime="20220924 20:16:57.593" endtime="20220924 20:16:57.593"/>
+</kw>
+<kw name="Input Text">
+<arg>id:Email</arg>
+<arg>saddam.utest@gmail.com</arg>
+<status status="NOT RUN" starttime="20220924 20:16:57.597" endtime="20220924 20:16:57.597"/>
+</kw>
+<kw name="Input Text">
+<arg>id:Password</arg>
+<arg>Test@12345</arg>
+<status status="NOT RUN" starttime="20220924 20:16:57.600" endtime="20220924 20:16:57.601"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//button[normalize-space()='Log in']</arg>
+<status status="NOT RUN" starttime="20220924 20:16:57.606" endtime="20220924 20:16:57.607"/>
+</kw>
+<status status="PASS" starttime="20220924 20:16:55.826" endtime="20220924 20:17:02.048"/>
+</kw>
+<status status="PASS" starttime="20220924 20:16:55.825" endtime="20220924 20:17:02.048"/>
+</test>
+<status status="PASS" starttime="20220924 20:16:55.781" endtime="20220924 20:17:02.051"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
