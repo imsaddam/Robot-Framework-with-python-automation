@@ -1,36 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20220924 20:16:55.778" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20220924 21:07:39.648" rpa="false" schemaversion="3">
 <suite id="s1" name="Robot Interactive Console" source="c:\Users\Im Saddam\.vscode\extensions\robocorp.robotframework-lsp-1.1.3\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
 <kw name="Open Browser">
-<arg>Chrome</arg>
-<msg timestamp="20220924 20:16:57.586" level="FAIL">No keyword with name 'Open Browser' found.</msg>
-<status status="FAIL" starttime="20220924 20:16:57.586" endtime="20220924 20:16:57.586"/>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<msg timestamp="20220924 21:07:40.580" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220924 21:07:40.580" endtime="20220924 21:07:40.580"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20220924 21:07:40.583" endtime="20220924 21:07:40.583"/>
+</kw>
+<kw name="Title Should Be">
+<arg>nopCommerce demo store</arg>
+<status status="NOT RUN" starttime="20220924 21:07:40.586" endtime="20220924 21:07:40.586"/>
 </kw>
 <kw name="Click Link">
-<arg>xpath=//a[@class='ico-login']</arg>
-<status status="NOT RUN" starttime="20220924 20:16:57.593" endtime="20220924 20:16:57.593"/>
+<arg>xpath://a[@class='ico-login']</arg>
+<status status="NOT RUN" starttime="20220924 21:07:40.589" endtime="20220924 21:07:40.589"/>
 </kw>
-<kw name="Input Text">
+<kw name="Set Variable" library="BuiltIn">
+<var>${"email"}</var>
 <arg>id:Email</arg>
-<arg>saddam.utest@gmail.com</arg>
-<status status="NOT RUN" starttime="20220924 20:16:57.597" endtime="20220924 20:16:57.597"/>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220924 21:07:40.589" endtime="20220924 21:07:40.589"/>
+</kw>
+<kw name="Element Should Be Visible">
+<arg>${"email"}</arg>
+<status status="NOT RUN" starttime="20220924 21:07:40.591" endtime="20220924 21:07:40.591"/>
+</kw>
+<kw name="Element Should Be Enabled">
+<arg>${"email"}</arg>
+<status status="NOT RUN" starttime="20220924 21:07:40.592" endtime="20220924 21:07:40.592"/>
 </kw>
 <kw name="Input Text">
-<arg>id:Password</arg>
-<arg>Test@12345</arg>
-<status status="NOT RUN" starttime="20220924 20:16:57.600" endtime="20220924 20:16:57.601"/>
+<arg>${"email"}</arg>
+<arg>test@gmail.com</arg>
+<status status="NOT RUN" starttime="20220924 21:07:40.594" endtime="20220924 21:07:40.594"/>
 </kw>
-<kw name="Click Element">
-<arg>xpath=//button[normalize-space()='Log in']</arg>
-<status status="NOT RUN" starttime="20220924 20:16:57.606" endtime="20220924 20:16:57.607"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220924 21:07:40.594" endtime="20220924 21:07:40.594"/>
 </kw>
-<status status="PASS" starttime="20220924 20:16:55.826" endtime="20220924 20:17:02.048"/>
+<kw name="clear element text">
+<arg>${"email"}</arg>
+<status status="NOT RUN" starttime="20220924 21:07:40.596" endtime="20220924 21:07:40.596"/>
 </kw>
-<status status="PASS" starttime="20220924 20:16:55.825" endtime="20220924 20:17:02.048"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220924 21:07:40.596" endtime="20220924 21:07:40.596"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20220924 21:07:40.598" endtime="20220924 21:07:40.598"/>
+</kw>
+<status status="PASS" starttime="20220924 21:07:39.673" endtime="20220924 21:07:44.834"/>
+</kw>
+<status status="PASS" starttime="20220924 21:07:39.672" endtime="20220924 21:07:44.834"/>
 </test>
-<status status="PASS" starttime="20220924 20:16:55.781" endtime="20220924 20:17:02.051"/>
+<status status="PASS" starttime="20220924 21:07:39.650" endtime="20220924 21:07:44.835"/>
 </suite>
 <statistics>
 <total>
