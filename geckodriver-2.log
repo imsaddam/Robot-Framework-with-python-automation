@@ -1,0 +1,12 @@
+1664209184633	geckodriver	INFO	Listening on 127.0.0.1:60173
+1664209187659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60174" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Im Saddam\\AppData\\Local\\Temp\\rust_mozprofileoxxOHJ"
+1664209188128	Marionette	INFO	Marionette enabled
+1664209188138	Marionette	INFO	Listening on port 60190
+Read port: 60190
+WebDriver BiDi listening on ws://127.0.0.1:60174
+1664209188336	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Im Saddam\\AppData\\Local\\Temp\\rust_mozprofileoxxOHJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60174/devtools/browser/41ad29ec-a437-4eef-852b-893371a579a0
+JavaScript warning: https://demowebshop.tricentis.com/Scripts/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://demowebshop.tricentis.com/Scripts/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1664209197229	Marionette	INFO	Stopped listening on port 60190
