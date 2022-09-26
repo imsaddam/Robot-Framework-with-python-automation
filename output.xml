@@ -1,110 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20220926 18:19:39.308" rpa="false" schemaversion="3">
-<suite id="s1" name="MultipleBrowser" source="E:\Testing\RobotFrameworkTest\TestCases\MultipleBrowser.robot">
+<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20220926 22:42:29.159" rpa="false" schemaversion="3">
+<suite id="s1" name="AlertsBox" source="E:\Testing\RobotFrameworkTest\TestCases\AlertsBox.robot">
 <test id="s1-t1" name="TestingSpeed" line="13">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${chrome_browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220926 18:19:39.543" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
-<status status="PASS" starttime="20220926 18:19:39.543" endtime="20220926 18:19:41.789"/>
+<msg timestamp="20220926 22:42:29.392" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20220926 22:42:29.392" endtime="20220926 22:42:33.109"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220926 18:19:41.791" endtime="20220926 18:19:41.933"/>
+<status status="PASS" starttime="20220926 22:42:33.109" endtime="20220926 22:42:33.244"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${edge_browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220926 18:19:41.938" level="INFO">Opening browser 'edge' to base url 'https://demowebshop.tricentis.com'.</msg>
-<status status="PASS" starttime="20220926 18:19:41.935" endtime="20220926 18:19:44.372"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="HTML9"]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220926 22:42:33.245" level="INFO">Clicking element 'xpath://*[@id="HTML9"]/div[1]/button'.</msg>
+<status status="PASS" starttime="20220926 22:42:33.244" endtime="20220926 22:42:33.313"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220926 18:19:44.376" endtime="20220926 18:19:44.577"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220926 22:42:35.324" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220926 22:42:33.314" endtime="20220926 22:42:35.324"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${firefox_browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220926 18:19:44.579" level="INFO">Opening browser 'firefox' to base url 'https://demowebshop.tricentis.com'.</msg>
-<msg timestamp="20220926 18:19:44.581" level="INFO">Firefox driver log is always forced to to: E:\Testing\RobotFrameworkTest\geckodriver-2.log</msg>
-<status status="PASS" starttime="20220926 18:19:44.578" endtime="20220926 18:19:51.207"/>
+<kw name="Alert Should Not Be Present" library="SeleniumLibrary">
+<arg>Press a button!</arg>
+<doc>Verifies that no alert is present.</doc>
+<msg timestamp="20220926 22:42:35.336" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: Press a button!
+Message: unexpected alert open: {Alert text : Press a button!}
+  (Session info: chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005EC0A3+2212003]
+	Ordinal0 [0x00582CC1+1780929]
+	Ordinal0 [0x0049465D+804445]
+	Ordinal0 [0x004EF41E+1176606]
+	Ordinal0 [0x004DEA36+1108534]
+	Ordinal0 [0x004B83C9+951241]
+	Ordinal0 [0x004B9396+955286]
+	GetHandleVerifier [0x00899CE2+2746722]
+	GetHandleVerifier [0x0088A234+2682548]
+	GetHandleVerifier [0x0067B34A+524234]
+	GetHandleVerifier [0x00679B60+518112]
+	Ordinal0 [0x00589FBC+1810364]
+	Ordinal0 [0x0058EA28+1829416]
+	Ordinal0 [0x0058EB15+1829653]
+	Ordinal0 [0x00598744+1869636]
+	BaseThreadInitThunk [0x75DA6739+25]
+	RtlGetFullPathName_UEx [0x77358FD2+1218]
+	RtlGetFullPathName_UEx [0x77358F9D+1165]
+</msg>
+<msg timestamp="20220926 22:42:35.347" level="FAIL">ValueError: Invalid alert action 'PRESS A BUTTON!'.</msg>
+<status status="FAIL" starttime="20220926 22:42:35.326" endtime="20220926 22:42:35.365"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220926 18:19:51.208" endtime="20220926 18:19:51.690"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220926 22:42:35.368" endtime="20220926 22:42:35.368"/>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>xpath://a[@class='ico-register']</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220926 18:19:51.693" level="INFO">Clicking link 'xpath://a[@class='ico-register']'.</msg>
-<status status="PASS" starttime="20220926 18:19:51.692" endtime="20220926 18:19:52.175"/>
-</kw>
-<kw name="FillUpRegistrationForm">
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>Gender</arg>
-<arg>M</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20220926 18:19:52.177" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
-<status status="PASS" starttime="20220926 18:19:52.176" endtime="20220926 18:19:52.409"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:FirstName</arg>
-<arg>John</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220926 18:19:52.409" level="INFO">Typing text 'John' into text field 'name:FirstName'.</msg>
-<status status="PASS" starttime="20220926 18:19:52.409" endtime="20220926 18:19:52.444"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:LastName</arg>
-<arg>Doe</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220926 18:19:52.446" level="INFO">Typing text 'Doe' into text field 'name:LastName'.</msg>
-<status status="PASS" starttime="20220926 18:19:52.445" endtime="20220926 18:19:52.508"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:Email</arg>
-<arg>test@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220926 18:19:52.509" level="INFO">Typing text 'test@gmail.com' into text field 'name:Email'.</msg>
-<status status="PASS" starttime="20220926 18:19:52.508" endtime="20220926 18:19:52.558"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:Password</arg>
-<arg>123456</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220926 18:19:52.559" level="INFO">Typing text '123456' into text field 'name:Password'.</msg>
-<status status="PASS" starttime="20220926 18:19:52.558" endtime="20220926 18:19:52.611"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:ConfirmPassword</arg>
-<arg>123456</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220926 18:19:52.611" level="INFO">Typing text '123456' into text field 'name:ConfirmPassword'.</msg>
-<status status="PASS" starttime="20220926 18:19:52.611" endtime="20220926 18:19:52.639"/>
-</kw>
-<status status="PASS" starttime="20220926 18:19:52.176" endtime="20220926 18:19:52.639"/>
-</kw>
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220926 18:19:52.640" endtime="20220926 18:19:58.271"/>
-</kw>
-<status status="PASS" starttime="20220926 18:19:39.542" endtime="20220926 18:19:58.272"/>
+<status status="FAIL" starttime="20220926 22:42:29.391" endtime="20220926 22:42:35.371">ValueError: Invalid alert action 'PRESS A BUTTON!'.</status>
 </test>
-<status status="PASS" starttime="20220926 18:19:39.310" endtime="20220926 18:19:58.273"/>
+<status status="FAIL" starttime="20220926 22:42:29.161" endtime="20220926 22:42:35.376"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="MultipleBrowser">MultipleBrowser</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="AlertsBox">AlertsBox</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220926 22:42:35.336" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: Press a button!
+Message: unexpected alert open: {Alert text : Press a button!}
+  (Session info: chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x005EC0A3+2212003]
+	Ordinal0 [0x00582CC1+1780929]
+	Ordinal0 [0x0049465D+804445]
+	Ordinal0 [0x004EF41E+1176606]
+	Ordinal0 [0x004DEA36+1108534]
+	Ordinal0 [0x004B83C9+951241]
+	Ordinal0 [0x004B9396+955286]
+	GetHandleVerifier [0x00899CE2+2746722]
+	GetHandleVerifier [0x0088A234+2682548]
+	GetHandleVerifier [0x0067B34A+524234]
+	GetHandleVerifier [0x00679B60+518112]
+	Ordinal0 [0x00589FBC+1810364]
+	Ordinal0 [0x0058EA28+1829416]
+	Ordinal0 [0x0058EB15+1829653]
+	Ordinal0 [0x00598744+1869636]
+	BaseThreadInitThunk [0x75DA6739+25]
+	RtlGetFullPathName_UEx [0x77358FD2+1218]
+	RtlGetFullPathName_UEx [0x77358F9D+1165]
+</msg>
 </errors>
 </robot>
