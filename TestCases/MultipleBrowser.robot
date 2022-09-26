@@ -10,7 +10,7 @@ ${url}  https://demowebshop.tricentis.com
 
 
 *** Test Cases ***
-TestingSpeed
+MultipleBrowserTest
     Open Browser  ${url}  ${chrome_browser}        # open chrome browser
     Maximize Browser Window
 

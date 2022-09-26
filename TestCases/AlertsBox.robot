@@ -10,7 +10,7 @@ ${url}  https://testautomationpractice.blogspot.com/
 
 
 *** Test Cases ***
-TestingSpeed
+AlertBoxesTest
     Open Browser  ${url}  ${chrome_browser}        # open chrome browser
     Maximize Browser Window
 
@@ -21,6 +21,8 @@ TestingSpeed
     # Handle Alert    dismiss    # dismiss the alert
 
     #  Handle Alert    leave    # leave the alert
+ 
+    
 
     # Alert Should Be Present    Press a button!          # check if alert is present
     Alert Should Not Be Present    Press a button!       # check if alert is not present

@@ -7,7 +7,7 @@ ${url}  https://demo.nopcommerce.com/
 
 
 *** Test Cases ***
-TestingInputBox
+RadioButtonTest
     Open Browser  ${url}  ${browser}
     Maximize Browser Window        # maximize the browser window
     
