@@ -14,13 +14,12 @@ TabbedWindowTest
     Open Browser  ${url}  ${chrome_browser}        # open chrome browser
     Maximize Browser Window
 
-    Click Element  xpath://a[@href='http://www.selenium.dev']//button[@class='btn btn-info'][normalize-space()='click']
+    Click Element  xpath://*[@id="Tabbed"]/a/button
 
-    Switch Window  URL= https://www.selenium.dev/
+     
     
-
     Close All Browsers
 
-
+    
 
 *** Keywords ***
