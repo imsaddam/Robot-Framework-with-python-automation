@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20221009 21:43:03.174" rpa="false" schemaversion="3">
-<suite id="s1" name="UserDefineKeywords" source="E:\Testing\RobotFrameworkTest\TestCases\UserDefineKeywords.robot">
-<test id="s1-t1" name="Test Case 1" line="11">
+<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20221010 21:22:59.352" rpa="false" schemaversion="3">
+<suite id="s1" name="ScrollingPage" source="E:\Testing\RobotFrameworkTest\TestCases\ScrollingPage.robot">
+<test id="s1-t1" name="Open default browser" line="12">
 <kw name="Launch Browser" library="CommonKeyowrds">
 <var>${PageTitle}</var>
 <arg>${URL}</arg>
@@ -10,84 +10,103 @@
 <arg>${AppURL}</arg>
 <arg>${AppBROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221009 21:43:03.456" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/login?returnUrl=%2F'.</msg>
-<status status="PASS" starttime="20221009 21:43:03.456" endtime="20221009 21:43:06.282"/>
+<msg timestamp="20221010 21:22:59.581" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/login?returnUrl=%2F'.</msg>
+<status status="PASS" starttime="20221010 21:22:59.581" endtime="20221010 21:23:02.183"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221009 21:43:06.283" endtime="20221009 21:43:06.401"/>
+<status status="PASS" starttime="20221010 21:23:02.183" endtime="20221010 21:23:02.317"/>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20221009 21:43:06.412" level="INFO">${title} = nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221009 21:43:06.401" endtime="20221009 21:43:06.412"/>
+<msg timestamp="20221010 21:23:02.322" level="INFO">${title} = nopCommerce demo store. Login</msg>
+<status status="PASS" starttime="20221010 21:23:02.317" endtime="20221010 21:23:02.322"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221009 21:43:06.412" level="INFO">nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221009 21:43:06.412" endtime="20221009 21:43:06.412"/>
+<msg timestamp="20221010 21:23:02.322" level="INFO">nopCommerce demo store. Login</msg>
+<status status="PASS" starttime="20221010 21:23:02.322" endtime="20221010 21:23:02.322"/>
 </kw>
-<msg timestamp="20221009 21:43:06.413" level="INFO">${PageTitle} = nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221009 21:43:03.455" endtime="20221009 21:43:06.413"/>
+<msg timestamp="20221010 21:23:02.322" level="INFO">${PageTitle} = nopCommerce demo store. Login</msg>
+<status status="PASS" starttime="20221010 21:22:59.580" endtime="20221010 21:23:02.322"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>message=${PageTitle}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221009 21:43:06.413" endtime="20221009 21:43:06.414"/>
+<status status="PASS" starttime="20221010 21:23:02.323" endtime="20221010 21:23:02.324"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>message=${PageTitle}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221009 21:43:06.415" level="INFO">nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221009 21:43:06.415" endtime="20221009 21:43:06.415"/>
+<msg timestamp="20221010 21:23:02.324" level="INFO">nopCommerce demo store. Login</msg>
+<status status="PASS" starttime="20221010 21:23:02.324" endtime="20221010 21:23:02.324"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221009 21:43:09.423" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20221009 21:43:06.416" endtime="20221009 21:43:09.423"/>
+<msg timestamp="20221010 21:23:05.335" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221010 21:23:02.325" endtime="20221010 21:23:05.335"/>
 </kw>
-<kw name="User Input action" library="CommonKeyowrds">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>jon@demo.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221009 21:43:09.425" level="INFO">Typing text 'jon@demo.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20221009 21:43:09.425" endtime="20221009 21:43:09.520"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>123456</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221009 21:43:09.521" level="INFO">Typing text '123456' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20221009 21:43:09.521" endtime="20221009 21:43:09.605"/>
-</kw>
-<status status="PASS" starttime="20221009 21:43:09.424" endtime="20221009 21:43:09.605"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221009 21:43:12.610" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20221009 21:43:09.606" endtime="20221009 21:43:12.610"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221009 21:43:12.612" endtime="20221009 21:43:14.871"/>
-</kw>
-<status status="PASS" starttime="20221009 21:43:03.454" endtime="20221009 21:43:14.872"/>
+<status status="PASS" starttime="20221010 21:22:59.579" endtime="20221010 21:23:05.337"/>
 </test>
-<status status="PASS" starttime="20221009 21:43:03.176" endtime="20221009 21:43:14.873"/>
+<test id="s1-t2" name="Scrolling Test" line="18">
+<kw name="Scrolling action" library="CommonKeyowrds">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221010 21:23:05.341" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<status status="PASS" starttime="20221010 21:23:05.340" endtime="20221010 21:23:05.350"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221010 21:23:07.363" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221010 21:23:05.350" endtime="20221010 21:23:07.363"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[6]/div[4]/div[1]/div[2]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221010 21:23:07.364" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[4]/div[1]/div[2]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221010 21:23:07.363" endtime="20221010 21:23:10.204"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221010 21:23:12.204" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221010 21:23:10.204" endtime="20221010 21:23:12.204"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, 0);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221010 21:23:12.205" level="INFO">Executing JavaScript:
+window.scrollTo(0, 0);
+Without any arguments.</msg>
+<status status="PASS" starttime="20221010 21:23:12.205" endtime="20221010 21:23:12.215"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221010 21:23:14.228" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221010 21:23:12.216" endtime="20221010 21:23:14.228"/>
+</kw>
+<status status="PASS" starttime="20221010 21:23:05.340" endtime="20221010 21:23:14.228"/>
+</kw>
+<status status="PASS" starttime="20221010 21:23:05.339" endtime="20221010 21:23:14.229"/>
+</test>
+<status status="PASS" starttime="20221010 21:22:59.354" endtime="20221010 21:23:14.231"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="UserDefineKeywords">UserDefineKeywords</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="ScrollingPage">ScrollingPage</stat>
 </suite>
 </statistics>
 <errors>
