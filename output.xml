@@ -1,112 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20221010 21:22:59.352" rpa="false" schemaversion="3">
-<suite id="s1" name="ScrollingPage" source="E:\Testing\RobotFrameworkTest\TestCases\ScrollingPage.robot">
-<test id="s1-t1" name="Open default browser" line="12">
-<kw name="Launch Browser" library="CommonKeyowrds">
-<var>${PageTitle}</var>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${AppURL}</arg>
-<arg>${AppBROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221010 21:22:59.581" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/login?returnUrl=%2F'.</msg>
-<status status="PASS" starttime="20221010 21:22:59.581" endtime="20221010 21:23:02.183"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221010 21:23:02.183" endtime="20221010 21:23:02.317"/>
-</kw>
-<kw name="Get Title" library="SeleniumLibrary">
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20221010 21:23:02.322" level="INFO">${title} = nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221010 21:23:02.317" endtime="20221010 21:23:02.322"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${title}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221010 21:23:02.322" level="INFO">nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221010 21:23:02.322" endtime="20221010 21:23:02.322"/>
-</kw>
-<msg timestamp="20221010 21:23:02.322" level="INFO">${PageTitle} = nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221010 21:22:59.580" endtime="20221010 21:23:02.322"/>
-</kw>
+<robot generator="Robot 5.0.1 (Python 3.9.0 on win32)" generated="20221013 21:24:58.997" rpa="false" schemaversion="3">
+<suite id="s1" name="ForLoopExample" source="e:\Testing\RobotFrameworkTest\TestCases\ForLoopExample.robot">
+<test id="s1-t1" name="Loop over multiple values" line="23">
 <kw name="Log To Console" library="BuiltIn">
-<arg>message=${PageTitle}</arg>
+<arg>Four users:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221010 21:23:02.323" endtime="20221010 21:23:02.324"/>
+<status status="PASS" starttime="20221013 21:24:59.032" endtime="20221013 21:24:59.034"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>message=${PageTitle}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221010 21:23:02.324" level="INFO">nopCommerce demo store. Login</msg>
-<status status="PASS" starttime="20221010 21:23:02.324" endtime="20221010 21:23:02.324"/>
+<for flavor="IN">
+<var>${var}</var>
+<value>${user1}</value>
+<value>${user2}</value>
+<value>${user3}</value>
+<value>Jon</value>
+<iter>
+<var name="${var}">Jon</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221013 21:24:59.035" endtime="20221013 21:24:59.036"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221010 21:23:05.335" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20221010 21:23:02.325" endtime="20221010 21:23:05.335"/>
+<status status="PASS" starttime="20221013 21:24:59.035" endtime="20221013 21:24:59.036"/>
+</iter>
+<iter>
+<var name="${var}">Kelly</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221013 21:24:59.037" endtime="20221013 21:24:59.037"/>
 </kw>
-<status status="PASS" starttime="20221010 21:22:59.579" endtime="20221010 21:23:05.337"/>
+<status status="PASS" starttime="20221013 21:24:59.037" endtime="20221013 21:24:59.037"/>
+</iter>
+<iter>
+<var name="${var}">Chodna</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221013 21:24:59.039" endtime="20221013 21:24:59.039"/>
+</kw>
+<status status="PASS" starttime="20221013 21:24:59.037" endtime="20221013 21:24:59.039"/>
+</iter>
+<iter>
+<var name="${var}">Jon</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221013 21:24:59.039" endtime="20221013 21:24:59.041"/>
+</kw>
+<status status="PASS" starttime="20221013 21:24:59.039" endtime="20221013 21:24:59.041"/>
+</iter>
+<status status="PASS" starttime="20221013 21:24:59.034" endtime="20221013 21:24:59.042"/>
+</for>
+<status status="PASS" starttime="20221013 21:24:59.031" endtime="20221013 21:24:59.042"/>
 </test>
-<test id="s1-t2" name="Scrolling Test" line="18">
-<kw name="Scrolling action" library="CommonKeyowrds">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, document.body.scrollHeight);</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20221010 21:23:05.341" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight);
-Without any arguments.</msg>
-<status status="PASS" starttime="20221010 21:23:05.340" endtime="20221010 21:23:05.350"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221010 21:23:07.363" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221010 21:23:05.350" endtime="20221010 21:23:07.363"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:/html/body/div[6]/div[4]/div[1]/div[2]/ul/li[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221010 21:23:07.364" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[4]/div[1]/div[2]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20221010 21:23:07.363" endtime="20221010 21:23:10.204"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221010 21:23:12.204" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221010 21:23:10.204" endtime="20221010 21:23:12.204"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, 0);</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20221010 21:23:12.205" level="INFO">Executing JavaScript:
-window.scrollTo(0, 0);
-Without any arguments.</msg>
-<status status="PASS" starttime="20221010 21:23:12.205" endtime="20221010 21:23:12.215"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221010 21:23:14.228" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221010 21:23:12.216" endtime="20221010 21:23:14.228"/>
-</kw>
-<status status="PASS" starttime="20221010 21:23:05.340" endtime="20221010 21:23:14.228"/>
-</kw>
-<status status="PASS" starttime="20221010 21:23:05.339" endtime="20221010 21:23:14.229"/>
-</test>
-<status status="PASS" starttime="20221010 21:22:59.354" endtime="20221010 21:23:14.231"/>
+<status status="PASS" starttime="20221013 21:24:59.004" endtime="20221013 21:24:59.045"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="ScrollingPage">ScrollingPage</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="ForLoopExample">ForLoopExample</stat>
 </suite>
 </statistics>
 <errors>
